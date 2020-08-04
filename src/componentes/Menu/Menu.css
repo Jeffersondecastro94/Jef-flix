@@ -1,10 +1,12 @@
-.Logo{
+/*.Logo{
 height: 40px;
-};
+max-width: 105px;
+};*/
 
 @media (max-width: 800px) {
     .Logo {
     max-width: 105px;
+    height: 40px;
     }
    }
    .Menu {
@@ -20,7 +22,8 @@ height: 40px;
     right: 0;
     padding-left: 5%;
     padding-right: 5%;
-    background: var(--black);
+    background:#000000;
+
     border-bottom: 2px solid var(--primary);
    }
    body {

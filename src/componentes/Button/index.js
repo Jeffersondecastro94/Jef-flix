@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 /* aqui estamos usando outra forma de fazer um botao , instalamos o styled-components no projeto com
 npm i styled-components. entao aq no index do componente Button importamos o styled criamos a constante Button abaixo
 que recebe styled e o a que é para ser um link dentro do styled ja temos o href e outras coisas entao pegamos o
@@ -9,7 +10,7 @@ button entao colocamos o &:focus e &:hover.
 
 pronto agr é so substituir o buttonlink por button q vai funcionar igual. no caso to usando ele agr no menu
 */
-const Button = styled.button`
+const Button = styled(Link)`
 
 color: var(--white);
     border: 1px solid var(--white);

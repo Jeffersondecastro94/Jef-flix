@@ -3,6 +3,8 @@ import Logo from '../../assets/img/Logo.png'; //import do logo
 import './Menu.css'; //import do css do menu. que ta dentro desta pasta (menu)
 import Button from '../Button';
 
+import{Link} from'react-router-dom';
+
 //import ButtonLink from '../componentes/ButtonLink';  //isso é pra caso eu queira usar o buttonlink e nao o button e vice versa
 
 
@@ -30,16 +32,18 @@ import Button from '../Button';
    Novo Video
 </ButtonLink>   */
 
+// o a foi substituido pelo link, o href pelo to trocou do html pro react
+
         function Menu(){ 
             return (
             
    <nav className="Menu">  
+            
+            <Link to="/">
+                <img clLinkssName= "Logo" src={Logo} alt="Jefflix logo"/>
+            </Link>
 
-            <a href="/">
-                <img className= "Logo" src={Logo} alt="Jefflix logo"/>
-            </a>
-
-            <Button as="a" className="ButtonLink" href="/"> 
+            <Button as={Link} className="ButtonLink" to="/cadastro/video"> 
                     Novo Video
             </Button>
    </nav>

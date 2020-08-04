@@ -1,13 +1,13 @@
 import React from 'react';
-import Menu  from './componentes/Menu';
-import dadosIniciais from './data/dados_iniciais.json';
-import BannerMain from './componentes/BannerMain';
-import Carousel from './componentes/Carousel';
-import Footer from './componentes/Footer';
+import Menu  from '../../componentes/Menu';
+import dadosIniciais from '../../data/dados_iniciais.json';
+import BannerMain from '../../componentes/BannerMain';
+import Carousel from '../../componentes/Carousel';
+import Footer from '../../componentes/Footer';
 
              //jsx java script xml  que é tipo um html 
             //da pra usar todas as tags do html
-function App() {
+function Home() {
   
   return ( 
     
@@ -54,4 +54,4 @@ category={dadosIniciais.categorias[5]}
   );
 }
 
-export default App; //oq faz isso aq ser importado pra outro lugar
+export default Home; //oq faz isso aq ser importado pra outro lugar
