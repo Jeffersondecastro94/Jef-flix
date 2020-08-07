@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Basedaspaginas from '../../../componentes/Basedaspaginas';
 import FormField from '../../../componentes/FormField';
-import Basedaspaginas from '../../../componentes/Basedaspaginas';
+
 
 function CadastroCategoria() {
   const valoresIniciais = {
